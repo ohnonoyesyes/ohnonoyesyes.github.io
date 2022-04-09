@@ -3,6 +3,14 @@
 <url> <loc>https://welearn.tencent.black/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://welearn.tencent.black/CTF/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://welearn.tencent.black/CTF/2017_0CTF_simplesqlin.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://welearn.tencent.black/CTF/dedecms-guess-admin-username-trick.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://welearn.tencent.black/Web安全/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://welearn.tencent.black/Web安全/SQLi/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://welearn.tencent.black/Web安全/SQLi/Mysql/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://welearn.tencent.black/Web安全/SQLi/Mysql/为什么-backtick-能做注释符.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://welearn.tencent.black/Web安全/SQLi/通用问题/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://welearn.tencent.black/Web安全/SQLi/通用问题/为什么感觉在实际的测试中ORDER_BY注入的比例变高了.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://welearn.tencent.black/环境搭建/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://welearn.tencent.black/环境搭建/Ubuntu18使用Python连接Oracle数据库.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://welearn.tencent.black/环境搭建/Ubuntu搭建DNS服务器.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
